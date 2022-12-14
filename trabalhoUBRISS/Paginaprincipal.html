@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="paginaprincipal.css">
+    <script src="https://kit.fontawesome.com/6820990c9f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <img src="Ubriss.png" class="image1">
+<div class="map1">
+    <div id="map" style="width:600px; height: 400px;"></div>
+    
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    
+    <script>
+        var map_parameters = { center: {lat: 47.490, lng: -117.585}, zoom: 8 };
+        var map = new google.maps.Map(document.getElementById('map'), map_parameters);
+    </script>
+    </div>
+    <div>
+        <button class="botão">Pedir um carro</button>
+        <i class="fa-regular fa-comment fa-3x" id="icon1"></i> 
+    </div>
+</html>
